@@ -1,0 +1,133 @@
+page {
+  font-family: PingFangSC-Regular, Helvetica, Tahoma, Arial, Hiragino Sans GB, \\51ac\9752\9ed1\4f53, Microsoft YaHei,
+    \\5fae\8f6f\96c5\9ed1, STXihei, \\534e\6587\7ec6\9ed1, SimSun, \\5b8b\4f53, Heiti, \\9ed1\4f53, sans-serif;
+}
+
+.login-and-register {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  background-image: url('https://guihua-assets.licaigc.com/h5/accounts/imgs/bg-14582e4852.png');
+  background-size: 100% 100%;
+  background-color: #3b6ca5;
+}
+
+.lar__header {
+  padding-top: 60px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.lar__logo {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 40px;
+}
+
+.lar__tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.lar-tabs__item {
+  margin-right: 100px;
+  padding-bottom: 10px;
+  width: 90px;
+  border-bottom: 2px solid transparent;
+  color: hsla(0, 0%, 100%, 0.6);
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.lar-tabs__item:last-child {
+  margin-right: 0;
+}
+
+.lar-tabs__item:active {
+  opacity: 0.95;
+}
+
+.lar-tabs__item--active {
+  border-color: #fff;
+  color: #fff;
+}
+
+.lar-tabs__content {
+  margin-top: 15px;
+  padding: 22px;
+  color: hsla(0, 0%, 100%, 0.8);
+}
+
+.lar-formitem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+}
+
+.lar-formitem input {
+  flex: 1;
+  height: 28px;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: hsla(0, 0%, 100%, 0.8);
+  font-size: 18px;
+}
+
+.phcolor {
+  color: hsla(0, 0%, 100%, 0.8);
+  font-size: 14px;
+  line-height: normal;
+  padding-top: 3px;
+}
+
+.lar__btn {
+  margin-top: 35px;
+  height: 44px;
+  border: 1px solid hsla(0, 0%, 100%, 0.5);
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 44px;
+}
+
+.lar__btn:active {
+  background: hsla(0, 0%, 100%, 0.08);
+}
+
+.lar__footer {
+  text-align: center;
+}
+
+.lar-footer__desc {
+  margin-top: 15px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.lar-footer__desc,
+.lar-footer__desc a,
+.lar-footer__desc a:active,
+.lar-footer__desc a:hover,
+.lar-footer__desc a:link {
+  color: hsla(0, 0%, 100%, 0.8);
+}
+
+.lar__footer--register a {
+  text-decoration: underline;
+}
+
+.image__eye {
+  width: 26px;
+  height: 13px;
+}

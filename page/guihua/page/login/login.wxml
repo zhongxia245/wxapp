@@ -1,0 +1,41 @@
+<view class="login-and-register">
+  <view class="lar__header">
+    <image class="lar__logo" src="https://guihua-assets.licaigc.com/h5/accounts/imgs/logo-1db9c22e33.png" alt="guihua logo"></image>
+    <view class="lar__tabs">
+      <view class="lar-tabs__item {{showLogin?'lar-tabs__item--active':''}}" bindtap="switchTab">登录</view>
+      <view class="lar-tabs__item {{!showLogin?'lar-tabs__item--active':''}}" bindtap="switchTab">注册</view>
+    </view>
+  </view>
+  <view class="lar-tabs__content">
+    <view class="lar__login" wx:if="{{showLogin}}">
+      <view class="lar-formitem">
+        <!-- placeholder 的样式设置方式如下 -->
+        <input type="text" placeholder-class="phcolor" placeholder="手机/邮箱" data-name="username" bindinput="onChange" />
+      </view>
+      <view class="lar-formitem">
+        <input type="password" placeholder-class="phcolor" placeholder="密码" data-name="password" bindinput="onChange" />
+        <image class="image__eye" src="https://guihua-assets.licaigc.com/h5/accounts/imgs/show-69fec34b0c.png" alt="show"></image>
+      </view>
+    </view>
+    <view class="lar__register" wx:if="{{!showLogin}}">
+      <view class="lar-formitem">
+        <input type="phone" placeholder-class="phcolor" placeholder="手机" maxlength="11" data-name="username" bindinput="onChange"
+        />
+      </view>
+      <view class="lar-formitem">
+        <input type="text" placeholder-class="phcolor" maxlength="6" placeholder="短信验证码" data-name="sms" bindinput="onChange" />
+        <view class="sms-btn">获取验证码</view>
+      </view>
+      <view class="lar-formitem">
+        <input type="password" placeholder-class="phcolor" placeholder="密码" data-name="password" bindinput="onChange" />
+        <image class="image__eye" src="https://guihua-assets.licaigc.com/h5/accounts/imgs/show-69fec34b0c.png" alt="show"></image>
+      </view>
+    </view>
+    <view class="lar__footer lar__footer--login">
+      <view class="lar__btn" bindtap="onLogin">登录</view>
+      <view class="lar-footer__desc">
+        <text href="/accounts/password/forgot">忘记密码？</text>
+      </view>
+    </view>
+  </view>
+</view>

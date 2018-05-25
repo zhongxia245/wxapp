@@ -1,0 +1,102 @@
+body {
+  font-family: 'Helvetica', 'Hiragino Sans GB', 'Microsoft YaHei', '\9ED1\4F53', Arial, sans-serif;
+}
+
+.container {
+  background: #f5f5f5;
+}
+
+.swiper-item {
+  display: block;
+  height: 150px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.home__tip {
+  padding: 5px;
+  background: #fefce5;
+  color: #b7b3b0;
+  font-size: 12px;
+}
+
+.home__cards {
+  padding: 10px;
+}
+
+.home__card {
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 1px 1px 5px #ddd;
+  text-align: center;
+  padding: 30px 0 20px 0;
+}
+
+.card__title {
+  margin-bottom: 10px;
+  color: #999;
+  text-align: center;
+  font-size: 16px;
+}
+
+.card__tags {
+  text-align: center;
+}
+
+.card__tag {
+  border-radius: 15px;
+  background: #fef6eb;
+  color: #999;
+  line-height: 1.8;
+  display: inline-block;
+  font-size: 12px;
+  padding: 0 10px;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+.card__tag:last-child {
+  margin-right: 0;
+}
+
+.card__rate {
+  color: #efa81b;
+  font-size: 40px;
+}
+
+.card__rate text {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.card__info {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 25px;
+}
+
+.card__info-item {
+  display: inline-block;
+  border-right: 1px solid #eee;
+  text-align: center;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.card__info-item:last-child {
+  border-right: 0;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+button {
+  height: 44px;
+  line-height: 44px;
+  font-size: 16px;
+  width: 70%;
+  border: 0;
+  background: #f5a625;
+  color: #f5f5f5;
+}

@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{banners}}" wx:key="*this">
+          <swiper-item bindtap="onGotoWeb" data-item="{{item.link_url}}">
+            <view class="swiper-item" style="background-image: url('{{item.image_url}}')"></view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+    <view class="home__tip">公告：基金系统已升级，基金数据正在恢复，查看完整通知</view>
+    <view class="home__cards">
+      <view class="home__card" wx:for-items="{{recommends}}" wx:key="{{item.id}}">
+        <view class="card__title">{{item.name}}</view>
+        <view class="card__tags">
+          <view wx:for="{{item.tags}}" wx:for-item="subitem" wx:key="subitem" class="card__tag">{{subitem}}</view>
+        </view>
+        <view class="card__rate">{{item.rate}}
+          <text>%</text>
+        </view>
+        <view class="card__info">
+          <view class="card__info-item" wx:for="{{item.info}}" wx:for-item="infoitem" wx:key="infoitem">{{infoitem}}</view>
+        </view>
+        <button style="background:{{item.btn_color}}" bindtap="onBuy">{{item.btn_text}}</button>
+      </view>
+    </view>
+  </view>
+</view>
